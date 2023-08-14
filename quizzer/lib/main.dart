@@ -6,6 +6,11 @@ import "Login.dart";
 import "LoginVerification.dart";
 import "Signup.dart";
 import "StartGame.dart";
+import "Category1.dart";
+import "Category2.dart";
+import "Category3.dart";
+import "Category4.dart";
+import "StoryWindow.dart";
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +35,7 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 title: "Quizzer Game",
                 theme: game_theme,
-                home: const StartGame(),
+                home: const StoryWindow(),
               );
           });
     }
