@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
               return MaterialApp(
                 title: "Quizzer Game",
                 theme: game_theme,
-                home: const StoryWindow(),
+                home: const Login(),
               );
           });
     }

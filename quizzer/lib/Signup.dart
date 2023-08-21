@@ -98,6 +98,7 @@ class Signup extends StatelessWidget{
                                                     ],
                                                 ),
                                                 child:  TextField(
+                                                    
                                                     decoration: InputDecoration(
                                                         hintText: "Name",
                                                             prefixIcon: Image.asset(

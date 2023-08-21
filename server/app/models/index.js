@@ -1,7 +1,5 @@
 const dbConfig = require("../../config/db.config.js");
-
 const Sequelize = require("sequelize");
-const DataTypes = require("sequelize");
 
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     host: dbConfig.HOST,
@@ -23,4 +21,6 @@ db.sequelize = sequelize;
 
 db.users = require('./user.model.js')(sequelize, Sequelize);
 db.admins = require("./admin.model.js")(sequelize, Sequelize);
+db.categories = require("./category.model.js")(sequelize, Sequelize);
+
 module.exports = db;

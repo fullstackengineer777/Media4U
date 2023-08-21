@@ -48610,7 +48610,8 @@ body,
   }
 }
 [data-kt-app-layout=dark-sidebar] .app-sidebar {
-  background-color: #1e1e2d;
+  /* background-color: #29573f; */
+  background: linear-gradient(180deg, rgba(98,132,255,0.3) 60%, rgba(255,114,182,0.1) 75%, rgba(249,229,232,0.3) 80%, rgba(151,225,212,0.3) 100%);
   border-right: 0 !important;
 }
 [data-kt-app-layout=dark-sidebar] .app-sidebar .hover-scroll-overlay-y {
@@ -48656,7 +48657,8 @@ body,
   color: #9D9DA6;
 }
 [data-kt-app-layout=dark-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-title {
-  color: #9D9DA6;
+  /* color: #9D9DA6; */
+  color: #05053b;
 }
 [data-kt-app-layout=dark-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-icon,
 [data-kt-app-layout=dark-sidebar] .app-sidebar .menu .menu-item .menu-link .menu-icon .svg-icon,
