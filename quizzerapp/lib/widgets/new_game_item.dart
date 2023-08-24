@@ -7,14 +7,19 @@ class NewGameItem  extends StatelessWidget {
 
   final String? title;
   final String? url;
-  NewGameItem({Key? key, this.title, this.url}):super(key:key);
+  final double? tit_width;
+  final double? tit_top;
+  final double? tit_height;
+  final double? height;
+    
+  NewGameItem({Key? key, this.title, this.url, this.tit_width, this.tit_top, this.height, this.tit_height}):super(key:key);
 
   @override
   Widget build(BuildContext context) {
 
     return Container(
-        width: 149.w,
-        height: 122.h,
+        width: this.tit_width ?? 149.w,
+        height: this.height ?? 122.h,
         decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20.sp),
                 image: DecorationImage(image: AssetImage(url ?? 'assets/images/new_game1.png'), fit: BoxFit.fill),
@@ -22,10 +27,10 @@ class NewGameItem  extends StatelessWidget {
         child: new Stack(
                 children: <Widget>[  
                     new Positioned(
-                        top: 110.h,
+                        top: this.tit_top ?? 110.h,
                         child: Container(
-                                width: 122.w,
-                                height: 32.h,
+                                width: this.tit_width ?? 122.w,
+                                height: this.tit_height ?? 32.h,
                                 decoration: BoxDecoration(
                                     // border: Border.all(color: Color.fromRGBO(0, 227, 243, 1), width: 3),
                                     borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20.sp), bottomRight: Radius.circular(20.sp)),

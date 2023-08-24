@@ -31,6 +31,12 @@ final TextStyle Head6_WHITE = TextStyle(
                             color: Color.fromRGBO(255, 255, 255, 1),
                         );
 
+final TextStyle Head7 = TextStyle(
+                            fontSize: 14.sp,
+                            fontWeight: FontWeight.w700,
+                            color: Color.fromRGBO(59, 79, 125, 1),
+                        );
+
 final TextStyle P28 = TextStyle(
                             fontSize: 28.sp,
                             fontWeight: FontWeight.w400,
@@ -39,6 +45,12 @@ final TextStyle P28 = TextStyle(
 
 final TextStyle P20 = TextStyle(
                             fontSize: 20.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Color.fromRGBO(59, 79, 125, 1),
+                        );
+
+final TextStyle P16 = TextStyle(
+                            fontSize:16.sp,
                             fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(59, 79, 125, 1),
                         );
@@ -77,4 +89,15 @@ final TextStyle P10_white = TextStyle(
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(255, 255, 255, 1),
+                        );
+
+final TextStyle P12_gray = TextStyle(
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Color.fromRGBO(139, 158, 176, 1),
+                        );
+final TextStyle P12 = TextStyle(
+                            fontSize: 12.sp,
+                            fontWeight: FontWeight.w500,
+                            color: Color.fromRGBO(59, 79, 125, 1),
                         );

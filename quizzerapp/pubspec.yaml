@@ -32,6 +32,7 @@ dependencies:
     sdk: flutter
   flutter_screenutil: ^5.0.1
   carousel_slider: ^4.0.0
+  flexible_scrollbar: 0.1.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -79,6 +80,25 @@ flutter:
     - assets/images/info.png
     - assets/images/notification.png
     - assets/images/more_square.png
+    - assets/images/profiles.png
+    - assets/images/search.png
+    - assets/images/alisia.png
+    - assets/images/brain.png
+    - assets/images/brian.png
+    - assets/images/diana.png
+    - assets/images/choose_player.png
+    - assets/images/edit.png
+    - assets/images/profile_anna.png
+    - assets/images/email.png
+    - assets/images/photo_bk.png
+    - assets/images/video_bk.png
+    - assets/images/winner_bk.png
+    - assets/images/video_play.png
+    - assets/images/play.png
+    - assets/images/pause.png
+    - assets/images/star.png
+    - assets/images/remove_player.png
+    - assets/images/remove_team.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

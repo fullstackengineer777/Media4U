@@ -2,12 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quizzerapp/constants/fonts.dart';
 
-class SubmitButton extends StatelessWidget {
+class PlayButton extends StatelessWidget {
   final VoidCallback? onTap;
-  final String? title;
-  final Color? fillColor;
-  final double? width;
-  const SubmitButton({Key? key, this.onTap, this.title, this.fillColor, this.width})
+  final String url;
+
+  const PlayButton({Key? key, this.onTap, required this.url})
       : super(key: key);
 
   @override
@@ -17,9 +16,8 @@ class SubmitButton extends StatelessWidget {
         onTap: onTap,
         child: Container(
           height: 44.h,
-          width: this.width ?? 136.w,
+          width: 44.w,
           decoration: BoxDecoration(
-            // color: fillColor ?? const Color.fromRGBO(81, 99, 224, 1),
               borderRadius: BorderRadius.circular(10.sp),
               border: Border.all(color: Color.fromRGBO(214, 227, 243, 1), width: 1),
               gradient: LinearGradient(
@@ -64,22 +62,14 @@ class SubmitButton extends StatelessWidget {
                         Color.fromRGBO(193,198,237,1)
                     ]
                 )
-                // boxShadow: const [
-                //   BoxShadow(
-                //     color: Color.fromRGBO(140, 146, 159, 1),
-                //   ),
-                //   BoxShadow(
-                //     color: Color.fromRGBO(220, 228, 248, 0.5),
-                //     spreadRadius: -6.0,
-                //     blurRadius: 6.0,
-                //   ),
-                // ],
               ),
               child: Center(
-                child: Text(
-                  title ?? '',
-                  style: P14_WHITE
-                ),
+                child: Container(
+                        width: 13.w, height: 16.h,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(image: AssetImage(url), fit: BoxFit.fill),
+                    )
+                )
               ),
             ),
           ),

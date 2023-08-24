@@ -4,23 +4,24 @@ import 'package:quizzerapp/constants/colors.dart';
 import 'package:quizzerapp/constants/strings.dart';
 import 'package:quizzerapp/constants/fonts.dart';
 
-import 'package:quizzerapp/screens/category2.dart';
+import 'package:quizzerapp/screens/game_window.dart';
 
 import 'package:quizzerapp/widgets/custom_appbar.dart';
 import 'package:quizzerapp/widgets/submit_button.dart';
 // import 'package:quizzerapp/widgets/text_input_widget.dart';
 import 'package:quizzerapp/widgets/question_button.dart';
 import 'package:quizzerapp/widgets/question_box.dart';
+import 'package:quizzerapp/widgets/explain_text.dart';
 
 
-class Category1Screen extends StatefulWidget{
-    const Category1Screen({super.key});
+class StoryWindow extends StatefulWidget{
+    const StoryWindow({super.key});
 
     @override
-    State<Category1Screen> createState() => _Category1ScreenState();
+    State<StoryWindow> createState() => _StoryWindowState();
 }
 
-class _Category1ScreenState extends State<Category1Screen>{
+class _StoryWindowState extends State<StoryWindow>{
 
     @override
     Widget build(BuildContext context){
@@ -34,29 +35,29 @@ class _Category1ScreenState extends State<Category1Screen>{
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:[
-                                CustomAppBar(title: CATEGORY1),
+                                CustomAppBar(title: STORY_WINDOW),
                                 SizedBox(height: 40.h),
-                                QuestionWidget(
-                                    question: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout?"
+                                Text(STORY, style: P14),
+                                SizedBox(height: 7.h),
+                                ExplainText (
+                                    height: 235.h,
+                                    explaination: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout It is a long fact that a reader will be distracted by the readable of a page when looking at its layout It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout It is a long fact that a reader will be distracted by the readable of a page when looking at its layout?"
                                 ),
-                                SizedBox(height: 59.h),
-                                // QuestionButton(),
-                                QuestionButton(title: "Lorem Ipsum", height: 44.h),
-                                SizedBox(height: 16.h),
-                                QuestionButton(title: "Lorem Ipsum", height: 44.h),
-                                SizedBox(height: 16.h),
-                                QuestionButton(title: "Lorem Ipsum", height: 44.h),
-                                SizedBox(height: 16.h),
-                                QuestionButton(title: "Lorem Ipsum", height: 44.h),
-                                SizedBox(height: 40.h),
-                              
+                                SizedBox(height: 13.h),
+                                Text(QUESTION, style: P14),
+                                SizedBox(height: 7.h),
+                                ExplainText (
+                                    height: 120.h,
+                                    explaination: "Rreader will be distracted by the readable of a page when looking at its layout?"
+                                ),
+                                SizedBox(height: 134.h),
                                 SubmitButton(
                                     title: NEXT,
                                     onTap: () {
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                            builder: (context) => Category2Screen(),
+                                                builder: (context) => GameWindow(),
                                             ));
                                     },
                                 ),

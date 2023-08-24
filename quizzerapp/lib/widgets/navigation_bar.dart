@@ -3,6 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quizzerapp/constants/fonts.dart';
 import 'package:quizzerapp/constants/strings.dart';
 
+import 'package:quizzerapp/screens/about_us.dart';
+import 'package:quizzerapp/screens/profile.dart';
+
 class CustomNavigationBar  extends StatelessWidget {
 
   final String? title;
@@ -67,7 +70,7 @@ class CustomNavigationBar  extends StatelessWidget {
                                             //     border: Border.all(color: Color.fromRGBO(0, 227, 243, 1), width: 1),
                                             // ),
                                             child: Padding(
-                                                padding: EdgeInsets.only(top: 18.h, right: 11.w, bottom: 12.h, left: 11.w),
+                                                padding: EdgeInsets.only(top: 18.h, right: 11.w, bottom: 9.h, left: 11.w),
                                                 child: Column(
                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                     children: [
@@ -92,11 +95,20 @@ class CustomNavigationBar  extends StatelessWidget {
                                                 child: Column(
                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                     children: [
-                                                        Container(
-                                                            width: 21.w, height: 21.h,
-                                                            decoration: BoxDecoration(
-                                                                image: DecorationImage(image: AssetImage('assets/images/info.png'), fit: BoxFit.fill),
-                                                            )
+                                                        InkWell(
+                                                            onTap: (){
+                                                                    Navigator.pushReplacement(
+                                                                        context,
+                                                                        MaterialPageRoute(
+                                                                        builder: (context) => const AboutUs(),
+                                                                    ));
+                                                            },
+                                                            child: Container(
+                                                                width: 21.w, height: 21.h,
+                                                                decoration: BoxDecoration(
+                                                                    image: DecorationImage(image: AssetImage('assets/images/info.png'), fit: BoxFit.fill),
+                                                                )
+                                                            ),                                                            
                                                         ),
                                                         Text(INFO, style: P10_white)
                                                     ]
@@ -116,7 +128,7 @@ class CustomNavigationBar  extends StatelessWidget {
                                                         Container(
                                                             width: 21.w, height: 21.h,
                                                             decoration: BoxDecoration(
-                                                                image: DecorationImage(image: AssetImage(""), fit: BoxFit.fill),
+                                                                // image: DecorationImage(image: AssetImage(""), fit: BoxFit.fill),
                                                             )
                                                         ),
                                                         Text(GAMES, style: P10_white)
@@ -155,11 +167,20 @@ class CustomNavigationBar  extends StatelessWidget {
                                                 child: Column(
                                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                                     children: [
-                                                        Container(
-                                                            width: 21.w, height: 21.h,
-                                                            decoration: BoxDecoration(
-                                                                image: DecorationImage(image: AssetImage('assets/images/more_square.png'), fit: BoxFit.fill),
-                                                            )
+                                                         InkWell(
+                                                            onTap: (){
+                                                                    Navigator.pushReplacement(
+                                                                        context,
+                                                                        MaterialPageRoute(
+                                                                        builder: (context) => const Profile(),
+                                                                    ));
+                                                            },
+                                                            child: Container(
+                                                                width: 21.w, height: 21.h,
+                                                                decoration: BoxDecoration(                                                                    
+                                                                    image: DecorationImage(image: AssetImage('assets/images/profiles.png'), fit: BoxFit.fill),
+                                                                )
+                                                            ),                                                            
                                                         ),
                                                         Text(PROFILE, style: P10_white)
                                                     ]

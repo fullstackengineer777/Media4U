@@ -4,7 +4,7 @@ import 'package:quizzerapp/constants/colors.dart';
 import 'package:quizzerapp/constants/strings.dart';
 import 'package:quizzerapp/constants/fonts.dart';
 
-import 'package:quizzerapp/screens/category2.dart';
+import 'package:quizzerapp/screens/category3.dart';
 
 import 'package:quizzerapp/widgets/custom_appbar.dart';
 import 'package:quizzerapp/widgets/submit_button.dart';
@@ -13,14 +13,14 @@ import 'package:quizzerapp/widgets/question_button.dart';
 import 'package:quizzerapp/widgets/question_box.dart';
 
 
-class Category1Screen extends StatefulWidget{
-    const Category1Screen({super.key});
+class Category2Screen extends StatefulWidget{
+    const Category2Screen({super.key});
 
     @override
-    State<Category1Screen> createState() => _Category1ScreenState();
+    State<Category2Screen> createState() => _Category2ScreenState();
 }
 
-class _Category1ScreenState extends State<Category1Screen>{
+class _Category2ScreenState extends State<Category2Screen>{
 
     @override
     Widget build(BuildContext context){
@@ -34,7 +34,7 @@ class _Category1ScreenState extends State<Category1Screen>{
                     child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children:[
-                                CustomAppBar(title: CATEGORY1),
+                                CustomAppBar(title: CATEGORY2),
                                 SizedBox(height: 40.h),
                                 QuestionWidget(
                                     question: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout?"
@@ -56,7 +56,7 @@ class _Category1ScreenState extends State<Category1Screen>{
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                            builder: (context) => Category2Screen(),
+                                            builder: (context) => Category3Screen(),
                                             ));
                                     },
                                 ),

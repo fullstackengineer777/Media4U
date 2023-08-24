@@ -9,12 +9,12 @@ BoxDecoration bkDecoration = BoxDecoration(
     gradient: LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        stops: [0.1, 0.4, 0.8, 1],
+        stops: [0.1, 0.2, 0.8, 1],
         colors: [
             Color.fromRGBO(249, 229, 232, 0.3),
             Color.fromRGBO(98, 132, 255, 0.3),
-            // Color.fromRGBO(98, 132, 255, 0.2),
-            Color.fromRGBO(255, 114, 182, 0.2),
+            Color.fromRGBO(98, 132, 255, 0.2),
+            // Color.fromRGBO(255, 114, 182, 0.2),
             Color.fromRGBO(151, 255, 212, 0.3),
         ]
     ),

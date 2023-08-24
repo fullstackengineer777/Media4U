@@ -3,6 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quizzerapp/constants/fonts.dart';
 import 'package:quizzerapp/constants/strings.dart';
 
+import 'package:quizzerapp/screens/invite_friend.dart';
+
+
 class Invite extends StatelessWidget implements PreferredSizeWidget {
 
 
@@ -35,7 +38,13 @@ class Invite extends StatelessWidget implements PreferredSizeWidget {
                         Text(INVITE_SENTENCE, style: Head3_WHITE),
                         SizedBox(height: 19.h),
                         InkWell(
-                            onTap: (){},
+                            onTap: (){
+                                    Navigator.pushReplacement(
+                                        context,
+                                        MaterialPageRoute(
+                                        builder: (context) => const InviteFriend(),
+                                    ));
+                            },
                             child: Container(
                                 width: 107.w,
                                 height: 34.h,

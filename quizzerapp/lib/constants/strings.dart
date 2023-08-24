@@ -24,6 +24,7 @@
     const NEW_GAME = "New Game";
     const CHOOSE_PLAYERS = "Choose Players";
     const SELECT_GAMES = "Select Games";
+    const SELECT_GAME = "Select Game";
     const UNFINISHED_GAMES = "Unfinished Games";
     const VIEW_ALL = "View all";
     const STATISTICS = "Statistics";
@@ -43,3 +44,18 @@
     const ENTER_PLAYER_NAME = "Enter Player Name";
     const SEARCH_NAME = "Search Name";
     const CATEGORY1 = "Category1";
+    const CATEGORY2 = "Category2";
+    const CATEGORY3 = "Category3";
+    const CATEGORY4 = "Category4";
+    const BACK = "Back";
+    const TEXT_EXPLANATION = "Text Explaination";
+    const VIDEO_EXPLANATION = "Video Explaination";
+    const PHOTO_EXPLANATION = "Photo Explaination";
+    const WEB_EXPLANATION = "Web Link Explaination";
+    const STORY = "Story:";
+    const QUESTION = "Question:";
+    const STORY_WINDOW = "Story Window";
+    const GAME_WINDOW = "Game Window(Leader)";
+    const TOTAL_RESULT = "Total Result";
+    const WINNER = "Winner";
+

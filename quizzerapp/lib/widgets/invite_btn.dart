@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quizzerapp/constants/fonts.dart';
+import 'package:quizzerapp/constants/strings.dart';
 
-class SubmitButton extends StatelessWidget {
+class InviteButton extends StatelessWidget {
   final VoidCallback? onTap;
-  final String? title;
-  final Color? fillColor;
-  final double? width;
-  const SubmitButton({Key? key, this.onTap, this.title, this.fillColor, this.width})
+
+  const InviteButton({Key? key, this.onTap, })
       : super(key: key);
 
   @override
@@ -16,11 +15,11 @@ class SubmitButton extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         child: Container(
-          height: 44.h,
-          width: this.width ?? 136.w,
+          height: 34.h,
+          width: 81.w,
           decoration: BoxDecoration(
             // color: fillColor ?? const Color.fromRGBO(81, 99, 224, 1),
-              borderRadius: BorderRadius.circular(10.sp),
+              borderRadius: BorderRadius.circular(20.sp),
               border: Border.all(color: Color.fromRGBO(214, 227, 243, 1), width: 1),
               gradient: LinearGradient(
                   begin: Alignment.topRight,
@@ -47,13 +46,13 @@ class SubmitButton extends StatelessWidget {
           ),
           padding: EdgeInsets.all(1.0.sp),
           child: SizedBox(
-            height: 40.h,
-            width: 132.w,
+            height: 30.h,
+            width: 77.w,
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 5),
+              padding: const EdgeInsets.symmetric(vertical: 2),
               decoration: BoxDecoration(
                 // color: fillColor ?? const Color.fromRGBO(81, 99, 224, 1),
-                borderRadius: BorderRadius.circular(10.sp),
+                borderRadius: BorderRadius.circular(20.sp),
                 border: Border.all( color: Color.fromRGBO(214, 227, 243, 1), width: 1),
                 gradient: LinearGradient(
                     begin: Alignment.topRight,
@@ -64,20 +63,10 @@ class SubmitButton extends StatelessWidget {
                         Color.fromRGBO(193,198,237,1)
                     ]
                 )
-                // boxShadow: const [
-                //   BoxShadow(
-                //     color: Color.fromRGBO(140, 146, 159, 1),
-                //   ),
-                //   BoxShadow(
-                //     color: Color.fromRGBO(220, 228, 248, 0.5),
-                //     spreadRadius: -6.0,
-                //     blurRadius: 6.0,
-                //   ),
-                // ],
               ),
               child: Center(
                 child: Text(
-                  title ?? '',
+                  INVITE,
                   style: P14_WHITE
                 ),
               ),

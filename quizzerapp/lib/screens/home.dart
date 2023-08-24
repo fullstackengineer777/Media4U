@@ -6,12 +6,18 @@ import 'package:quizzerapp/constants/colors.dart';
 import 'package:quizzerapp/constants/strings.dart';
 import 'package:quizzerapp/constants/fonts.dart';
 
+import 'package:quizzerapp/screens/select_unfinished_games.dart';
+import 'package:quizzerapp/screens/select_new_games.dart';
+
+
+
 import 'package:quizzerapp/widgets/custom_appbar.dart';
 import 'package:quizzerapp/widgets/submit_button.dart';
 import 'package:quizzerapp/widgets/invite.dart';
 import 'package:quizzerapp/widgets/unfinished_game_item.dart';
 import 'package:quizzerapp/widgets/new_game_item.dart';
 import 'package:quizzerapp/widgets/navigation_bar.dart';
+
 
 class HomeScreen extends StatefulWidget{
     const HomeScreen({super.key});
@@ -47,11 +53,11 @@ class _HomeScreenState extends State<HomeScreen>{
                                                 Text( UNFINISHED_GAMES, style: Head4 ),
                                                 GestureDetector(
                                                     onTap: () {
-                                                        // Navigator.pushReplacement(
-                                                        //     context,
-                                                        //     MaterialPageRoute(
-                                                        //     builder: (context) => const LoginScreen(),
-                                                        //     ));
+                                                        Navigator.pushReplacement(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                            builder: (context) => const SelectUnfinishedGames(),
+                                                            ));
                                                     },
                                                     child: Row(
                                                         children: [
@@ -114,11 +120,11 @@ class _HomeScreenState extends State<HomeScreen>{
                                                 Text( NEW_GAME, style: Head4 ),
                                                 GestureDetector(
                                                     onTap: () {
-                                                        // Navigator.pushReplacement(
-                                                        //     context,
-                                                        //     MaterialPageRoute(
-                                                        //     builder: (context) => const LoginScreen(),
-                                                        //     ));
+                                                        Navigator.pushReplacement(
+                                                            context,
+                                                            MaterialPageRoute(
+                                                            builder: (context) => const SelectNewGames(),
+                                                            ));
                                                     },
                                                     child: Row(
                                                         children: [
